@@ -4,6 +4,7 @@
  */
 package br.edu.ifms.aula.disciplina;
 
+import br.edu.ifms.aula.curso.CursoDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -26,5 +27,5 @@ public class DisciplinaDto {
     private String email;
     private String cargaHoraria;
     private String ementa;
-    
+    private CursoDto curso;
 }

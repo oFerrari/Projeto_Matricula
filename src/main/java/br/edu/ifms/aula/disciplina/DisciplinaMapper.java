@@ -4,6 +4,7 @@
  */
 package br.edu.ifms.aula.disciplina;
 
+import br.edu.ifms.aula.curso.CursoMapper;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -14,7 +15,7 @@ import org.mapstruct.factory.Mappers;
  *
  * @author 1513003
  */
-@Mapper
+@Mapper(uses = {CursoMapper.class})
 public interface DisciplinaMapper {
     
     public static final DisciplinaMapper INSTANCE = Mappers.getMapper(DisciplinaMapper.class);

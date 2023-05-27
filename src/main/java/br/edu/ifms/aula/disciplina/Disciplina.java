@@ -8,9 +8,12 @@ package br.edu.ifms.aula.disciplina;
  *
  * @author 07180871192
  */
+import br.edu.ifms.aula.curso.Curso;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -37,4 +40,8 @@ public class Disciplina implements Serializable {
     private String email;
     private String cargaHoraria;
     private String ementa;
+    
+    @ManyToOne
+    @JoinColumn
+    private Curso curso;
 }

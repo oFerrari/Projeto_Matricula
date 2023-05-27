@@ -8,7 +8,9 @@ import br.edu.ifms.arch.BaseObject;
 import br.edu.ifms.aula.campus.Campus;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -30,4 +32,5 @@ public class Curso extends BaseObject {
     
     @ManyToOne
     private Campus campus;
+    
 }
